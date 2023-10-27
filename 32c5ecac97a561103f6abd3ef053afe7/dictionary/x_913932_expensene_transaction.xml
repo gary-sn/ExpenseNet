@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="76bc202897e561103f6abd3ef053af93" label="Transaction" max_length="40" name="x_913932_expensene_transaction" type="collection">
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Amount" max_length="20" name="amount" type="currency"/>
+        <element label="Date/time" max_length="40" name="date_time" type="glide_date_time"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;&#10;&#9;return current.mechant.getDisplayValue() + ': ' + current.amount.getDisplayValue();  // return the calculated value&#10;&#10;})(current);" display="true" label="Description" max_length="40" name="description" type="string" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Merchant" max_length="32" name="mechant" reference="core_company" type="reference"/>
+        <element label="Payment method" max_length="40" name="payment_method" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="mechant"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

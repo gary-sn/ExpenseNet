@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bbdd686497e561103f6abd3ef053af16" label="Expense report" max_length="40" name="x_913932_expensene_expense_report" type="collection">
+        <element label="Approval notes" max_length="40" name="approval_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Conference documentation" max_length="40" name="conference_documentation" type="user_image"/>
+        <element label="Conference expense notes" max_length="40" name="conference_expense_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Dinner documentation" max_length="40" name="dinner_documentation" type="user_image"/>
+        <element label="Dinner expense notes" max_length="40" name="dinner_expense_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" calculation="(function calculatedFieldValue(current) {&#10;    var transactions = current.transactions + &quot;&quot;;&#10;    var transactionSysIds = transactions.split(&quot;,&quot;);&#10;    var expenseTotal = 0;&#10;&#10;    for (var i = 0; i &lt; transactionSysIds.length; i++) {&#10;        var transactionGr = new GlideRecord(&quot;x_913932_expensene_transaction&quot;);&#10;        transactionGr.get(transactionSysIds[i]);&#10;&#10;        var transactionAmount = parseInt(transactionGr.amount + &quot;&quot;);&#10;&#10;        expenseTotal += transactionAmount;&#10;    }&#10;&#10;    return expenseTotal;&#10;&#10;})(current);" label="Expense total" max_length="20" name="expense_total" read_only="true" type="currency" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Flight documentation" max_length="40" name="flight_documentation" type="user_image"/>
+        <element label="Flight expense notes" max_length="40" name="flight_expense_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Hotel documentation" max_length="40" name="hotel_documentation" type="user_image"/>
+        <element label="Hotel expense notes" max_length="40" name="hotel_expense_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Mediation documentation" max_length="40" name="mediation_documentation" type="user_image"/>
+        <element label="Mediation response notes" max_length="40" name="mediation_response_notes" type="string"/>
+        <element display="true" label="Reason for expenses" max_length="40" name="reason_for_expenses" type="string"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Rental car documentation" max_length="40" name="rental_car_documentation" type="user_image"/>
+        <element label="Rental car expense notes" max_length="40" name="rental_car_expense_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Required car rental" max_length="40" name="required_car_rental" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Required conference" max_length="40" name="required_conference" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Required dinner" max_length="40" name="required_dinner" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Required flight" max_length="40" name="required_flight" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Required hotel" max_length="40" name="required_hotel" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="10" label="Stage" max_length="40" name="stage" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="documentation" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Documentation" sequence="10" value="documentation"/>
+                <element inactive_on_update="false" label="Managerial review" sequence="20" value="managerial_review"/>
+                <element inactive_on_update="false" label="HR review" sequence="30" value="hr_review"/>
+                <element inactive_on_update="false" label="Awaiting info" sequence="40" value="awaiting_info"/>
+                <element inactive_on_update="false" label="Review" sequence="50" value="review"/>
+                <element inactive_on_update="false" label="Closed" sequence="60" value="closed"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Transactions" max_length="4000" name="transactions" reference="x_913932_expensene_transaction" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="08da066c976d61103f6abd3ef053affe" sys_domain="global" table="x_913932_expensene_expense_report" version="3" view="flight_info">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>flight_expense_notes</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-10 01:04:35</sys_created_on>
+            <sys_id>8f2b466c976d61103f6abd3ef053af1b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_913932_expensene_expense_report" sys_domain="global" view="c4da066c976d61103f6abd3ef053aff9">08da066c976d61103f6abd3ef053affe</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-10 01:04:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>flight_documentation</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-10 01:04:35</sys_created_on>
+            <sys_id>832b466c976d61103f6abd3ef053af1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_913932_expensene_expense_report" sys_domain="global" view="c4da066c976d61103f6abd3ef053aff9">08da066c976d61103f6abd3ef053affe</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-10 01:04:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_913932_expensene_expense_report</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-10 01:03:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>08da066c976d61103f6abd3ef053affe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_913932_expensene_expense_report</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="ExpenseNet" source="x_913932_expensene">32c5ecac97a561103f6abd3ef053afe7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ExpenseNet">32c5ecac97a561103f6abd3ef053afe7</sys_scope>
+            <sys_update_name>sys_ui_section_08da066c976d61103f6abd3ef053affe</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-10 01:03:00</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Flight info" name="flight_info">c4da066c976d61103f6abd3ef053aff9</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
