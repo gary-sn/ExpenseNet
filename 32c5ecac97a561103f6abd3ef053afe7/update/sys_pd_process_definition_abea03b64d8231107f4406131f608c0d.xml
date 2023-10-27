@@ -19,7 +19,7 @@
         <sys_scope display_value="ExpenseNet">32c5ecac97a561103f6abd3ef053afe7</sys_scope>
         <sys_update_name>sys_pd_process_definition_abea03b64d8231107f4406131f608c0d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-27 01:36:27</sys_updated_on>
+        <sys_updated_on>2023-10-27 01:57:29</sys_updated_on>
         <view_type>KANBAN</view_type>
     </sys_pd_process_definition>
     <sys_pd_process_definition action="INSERT_OR_UPDATE">
@@ -42,7 +42,7 @@
         <sys_scope display_value="ExpenseNet">32c5ecac97a561103f6abd3ef053afe7</sys_scope>
         <sys_update_name>sys_pd_process_definition_abea03b64d8231107f4406131f608c0d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-27 01:36:27</sys_updated_on>
+        <sys_updated_on>2023-10-27 01:57:29</sys_updated_on>
         <view_type>KANBAN</view_type>
     </sys_pd_process_definition>
     <sys_pd_lane action="delete_multiple" query="process_definition=abea03b64d8231107f4406131f608c0d^sys_idNOT IN061b8fb64d8231107f4406131f608c37,ca5b8f764d8231107f4406131f608c80,2f7b87b64d8231107f4406131f608c07,8e7c8fb64d8231107f4406131f608c38"/>
@@ -110,7 +110,7 @@
         <active>true</active>
         <condition_to_run/>
         <description>Submit your expense review to your manager for approval and/or Feedback</description>
-        <label>Managerial Review</label>
+        <label>Review</label>
         <lane_condition/>
         <name>review</name>
         <order>4</order>
@@ -120,9 +120,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-26 22:18:44</sys_created_on>
         <sys_id>8e7c8fb64d8231107f4406131f608c38</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-26 22:20:43</sys_updated_on>
+        <sys_updated_on>2023-10-27 01:57:29</sys_updated_on>
         <visible_rule/>
     </sys_pd_lane>
     <sys_variable_value action="delete_multiple" query="document_key=8e7c8fb64d8231107f4406131f608c38"/>
@@ -10838,7 +10838,7 @@ expense rejection</description>
         <inputs/>
         <inputs/>
         <label>Update expense report state</label>
-        <lane display_value="Managerial Review">8e7c8fb64d8231107f4406131f608c38</lane>
+        <lane display_value="Review">8e7c8fb64d8231107f4406131f608c38</lane>
         <name>automated_update_record</name>
         <order>11</order>
         <outputs/>
@@ -11710,7 +11710,7 @@ knowledge
         <inputs/>
         <inputs/>
         <label>Confirm report submission</label>
-        <lane display_value="Managerial Review">8e7c8fb64d8231107f4406131f608c38</lane>
+        <lane display_value="Review">8e7c8fb64d8231107f4406131f608c38</lane>
         <name>confirm_report_submission</name>
         <order>12</order>
         <outputs/>
@@ -12198,7 +12198,7 @@ knowledge
         <inputs/>
         <inputs/>
         <label>Update expense report state</label>
-        <lane display_value="Managerial Review">8e7c8fb64d8231107f4406131f608c38</lane>
+        <lane display_value="Review">8e7c8fb64d8231107f4406131f608c38</lane>
         <name>update_expense_report_state</name>
         <order>13</order>
         <outputs/>
